@@ -1,19 +1,37 @@
-# Virtual environments
+# Python
 .venv/
 venv/
-env/
-ENV/
-*/.venv/
-*/venv/
-*/env/
-
-# Python cache
 __pycache__/
 *.py[cod]
 
 # Jupyter
 .ipynb_checkpoints/
 
-# OS files
+# Data
+data/raw/*
+data/interim/*
+data/processed/*
+
+# Keep folder structure
+!data/raw/.gitkeep
+!data/raw/eeg/
+!data/raw/eeg/.gitkeep
+!data/raw/clinical/
+!data/raw/clinical/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Secrets
+.env
+.env.*
+
+# macOS
 .DS_Store
-Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary
+*.log
+*.tmp
